@@ -111,18 +111,16 @@
                                                         <span class="text-danger">*</span>
                                                     </label>
                                                     <div class="col-lg-6">
-														<input data-rule-required="true" name="price" type="text" value="{{data.price}}" class="form-control" id="price"  placeholder="Enter a product price.." required>
+														<input data-rule-required="true" name="price" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" value="{{data.price}}" class="form-control" id="price"  placeholder="Enter a product price.." required>
 														<div class="invalid-feedback">
 															Please enter a Product price.
-														</div>
-                                                    </div>
-                                                </div>
+yy                                                </div>
                                                 <div class="mb-3 row">
                                                     <label class="col-lg-4 col-form-label"  for="validationCustom01">Stock
                                                         <span class="text-danger">*</span>
                                                     </label>
                                                     <div class="col-lg-6">
-														<input data-rule-required="true" name="stock" type="text" value="{{data.stock}}" class="form-control" id="stock"  placeholder="Enter a product stock.." required>
+														<input data-rule-required="true" name="stock" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" value="{{data.stock}}" class="form-control" id="stock"  placeholder="Enter a product stock.." required>
 														<div class="invalid-feedback">
 															Please enter a Product stock.
 														</div>
