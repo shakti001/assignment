@@ -5,6 +5,8 @@ from .manager import CustomUserManager
 
         
 class User(AbstractUser):
+    username = models.CharField(max_length=50,blank=True, null=True )
+
     email = models.EmailField(unique=True)
     Otp = models.CharField(max_length=50)
     slug = models.CharField(max_length=50, unique=True, default=uuid.uuid4)
