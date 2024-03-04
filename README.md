@@ -1,5 +1,5 @@
 # Create a virtual environment (optional but recommended)
-
+python -m venv myenv
 cd myenv/bin/activate  # On Windows: myenv\Scripts\activate
 
 # Install dependencies
